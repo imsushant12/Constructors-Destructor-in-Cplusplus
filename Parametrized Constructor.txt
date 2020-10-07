@@ -12,6 +12,11 @@ class Constructor
     int a,b;
 
 public:
+    Constructor()
+    {
+        a=0;
+        b=0;
+    }
 
     Constructor(int x , int y)
     {
@@ -22,21 +27,25 @@ public:
     void printdata()
     {
         cout<<a<<endl;
-        cout<<b<<endl;
+        cout<<b<<endl<<endl;
     }
 };
 
 int main()
 {
-    Constructor c(10,20);
+    Constructor c;          //default constructor will be called
     c.printdata();
-	
-    /*   
-    
-    Other way to call and initialize the Constructor
-   
-    Constructor c2 = Constructor(30,40);
+
+
+
+
+    Constructor c1(10,20);     //parametrized constructor will be called
+    c1.printdata();
+
+    // Other way to call and initialize the Parametrized Constructor
+
+    Constructor c2 = Constructor(300,400);
     c2.printdata();
-   
-    */
+
+
 }
