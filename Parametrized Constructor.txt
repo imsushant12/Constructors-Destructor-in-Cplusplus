@@ -37,6 +37,6 @@ int main()
    
     Constructor c2 = Constructor(30,40);
     c2.printdata();
-    
+   
     */
 }
