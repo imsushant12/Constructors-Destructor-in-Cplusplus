@@ -1,0 +1,42 @@
+//by Sushant Gaurav
+
+// Parametrized Constructor //
+
+#include<bits/stdc++.h>
+#include<iostream>
+
+using namespace std;
+
+class Constructor
+{
+    int a,b;
+
+public:
+
+    Constructor(int x , int y)
+    {
+        a = x;
+        b = y;
+    }
+
+    void printdata()
+    {
+        cout<<a<<endl;
+        cout<<b<<endl;
+    }
+};
+
+int main()
+{
+    Constructor c(10,20);
+    c.printdata();
+	
+    /*   
+    
+    Other way to call and initialize the Constructor
+   
+    Constructor c2 = Constructor(30,40);
+    c2.printdata();
+    
+    */
+}
