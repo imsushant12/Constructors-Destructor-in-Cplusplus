@@ -50,7 +50,28 @@ int main()
 
     Constructor c3 = c1;                  //Copy Constructor calling
     c3.printdata();
-	
     Constructor c4 (c1);                  //other way to use copy constructor
     c4.printdata();
+
+    Constructor c5;
+    c5 = c;
+    c5.printdata();                       //this is assignment not copy constructor calling
 }
+
+/*
+Output:
+0
+0
+
+10
+20
+
+10
+20
+
+10
+20
+
+0
+0
+*/
