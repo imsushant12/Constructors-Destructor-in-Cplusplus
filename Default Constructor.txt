@@ -1,3 +1,6 @@
+/*by Sushant Gaurav
+--------------------
+
 // Default Constructor in Private //
 
 #include<bits/stdc++.h>
@@ -36,6 +39,10 @@ int main()
 
 ===========================================================================================
 
+*/
+
+
+
 // Default Constructor in Public//
 
 #include<bits/stdc++.h>
@@ -54,7 +61,7 @@ public:
     Constructor()		//1.
     {}
 
-    Constructor()		//2.-->Both are called default constructor, can use any one.
+    Constructor()		//2.-->Both are called default constructor, can use any one. But cannot use both.
     {
         x=10;
         y=20;
@@ -65,7 +72,7 @@ public:
 int main()
 {
     Constructor c;
-	cout<<c.x<<endl;
+    cout<<c.x<<endl;
     cout<<c.y<<endl;
 }
 
